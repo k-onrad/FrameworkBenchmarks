@@ -1,0 +1,26 @@
+{
+  "framework": "marble",
+  "tests": [
+    {
+      "default": {
+        "json_url": "/json",
+        "plaintext_url": "/plaintext",
+        "port": 8080,
+        "approach": "Realistic",
+        "classification": "Fullstack",
+        "database": "postgres",
+        "framework": "Marble",
+        "language": "TypeScript",
+        "flavor": "None",
+        "orm": "Raw",
+        "platform": "Node",
+        "webserver": "Node",
+        "os": "Linux",
+        "database_os": "Linux",
+        "display_name": "Marble",
+        "notes": "",
+        "versus": "None"
+      }
+    }
+  ]
+}

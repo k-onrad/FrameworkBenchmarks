@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.updates$ = exports.fortunes$ = exports.queries$ = exports.db$ = exports.plaintext$ = exports.json$ = void 0;
+const core_1 = require("@marblejs/core");
+const operators_1 = require("rxjs/operators");
+exports.json$ = core_1.r.pipe(core_1.r.matchPath('/json'), core_1.r.matchType('GET'), core_1.r.useEffect(req$ => req$.pipe(operators_1.mapTo({ body: 'Hello, world!' }))));
+exports.plaintext$ = core_1.r.pipe(core_1.r.matchPath('/plaintext'), core_1.r.matchType('GET'), core_1.r.useEffect(req$ => req$.pipe(operators_1.mapTo({ headers: { 'Content-Type': 'text/plain; charset=UTF-8' }, body: 'Hello, world!' }))));
+exports.db$ = core_1.r.pipe(core_1.r.matchPath('/db'), core_1.r.matchType('GET'), core_1.r.useEffect(req$ => req$.pipe(operators_1.mapTo({ body: 'Hello, world!' }))));
+exports.queries$ = core_1.r.pipe(core_1.r.matchPath('/queries'), core_1.r.matchType('GET'), core_1.r.useEffect(req$ => req$.pipe(operators_1.mapTo({ body: 'Hello, world!' }))));
+exports.fortunes$ = core_1.r.pipe(core_1.r.matchPath('/fortunes'), core_1.r.matchType('GET'), core_1.r.useEffect(req$ => req$.pipe(operators_1.mapTo({ body: 'Hello, world!' }))));
+exports.updates$ = core_1.r.pipe(core_1.r.matchPath('/updates'), core_1.r.matchType('GET'), core_1.r.useEffect(req$ => req$.pipe(operators_1.mapTo({ body: 'Hello, world!' }))));
