@@ -23,5 +23,4 @@ if (cluster.isMaster) {
 } else {
   // Task for forked worker
   main()
-    .then(() => console.log('Starting server, listening on 0.0.0.0:8080'))
 }

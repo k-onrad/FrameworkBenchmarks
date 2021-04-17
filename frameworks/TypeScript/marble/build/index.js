@@ -14,11 +14,13 @@ const server = core_1.createServer({
 });
 const main = async () => await (await server)();
 if (cluster_1.default.isMaster) {
+    // Fork workers.
     os_1.default.cpus().forEach(cluster_1.default.fork);
     cluster_1.default.on('exit', () => {
         process.exit(1);
     });
 }
 else {
+    // Task for forked worker
     main();
 }
