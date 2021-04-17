@@ -13,4 +13,15 @@ const server = createServer({
 const main: IO<void> = async () =>
   await (await server)()
 
-main()
+if (cluster.isMaster) {
+  // Fork workers.
+  os.cpus().forEach(cluster.fork)
+
+  cluster.on('exit', () => {
+    process.exit(1)
+  })
+} else {
+  // Task for forked worker
+  main()
+    .then(() => console.log('Starting server, listening on 0.0.0.0:8080'))
+}
