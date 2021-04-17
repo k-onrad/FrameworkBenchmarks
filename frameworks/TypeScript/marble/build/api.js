@@ -8,7 +8,7 @@ exports.json$ = core_1.r.pipe(core_1.r.matchPath('/json'), core_1.r.matchType('G
         'Content-Type': 'application/json; charset=UTF-8',
         Server: 'marble',
     },
-    body: '{ message: \'Hello, World!\' }',
+    body: { message: 'Hello, World!' },
 }))));
 exports.plaintext$ = core_1.r.pipe(core_1.r.matchPath('/plaintext'), core_1.r.matchType('GET'), core_1.r.useEffect(req$ => req$.pipe(operators_1.mapTo({
     headers: {
