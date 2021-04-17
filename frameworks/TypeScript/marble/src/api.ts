@@ -10,7 +10,7 @@ export const json$ = r.pipe(
         'Content-Type': 'application/json; charset=UTF-8',
         Server: 'marble',
       },
-      body: { message: 'Hello, World!' },
+      body: '{ message: \'Hello, World!\' }',
     }),
   )))
 
