@@ -13,12 +13,4 @@ const server = createServer({
 const main: IO<void> = async () =>
   await (await server)()
 
-if (cluster.isMaster) {
-  [...os.cpus(), ...os.cpus()].forEach(cluster.fork)
-
-  cluster.on('exit', () => {
-    process.exit(1)
-  })
-} else {
-  main()
-}
+main()
