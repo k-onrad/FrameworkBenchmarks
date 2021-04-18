@@ -1,0 +1,636 @@
+Statistical profiling result from isolate-0x4ea6bf0-409463-v8-409463.log, (26432 ticks, 89 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  15459   58.5%          /home/knrd/.nvm/versions/node/v15.14.0/bin/node
+     35    0.1%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    258    1.0%    2.4%  LazyCompile: *Subscription.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscription.js:17:51
+    241    0.9%    2.2%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    214    0.8%    2.0%  LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    208    0.8%    1.9%  LazyCompile: *parserOnHeadersComplete node:_http_common:78:33
+    183    0.7%    1.7%  LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+    182    0.7%    1.7%  LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+    171    0.6%    1.6%  LazyCompile: *clearBuffer node:internal/streams/writable:534:21
+    170    0.6%    1.6%  LazyCompile: *parserOnIncoming node:_http_server:860:26
+    154    0.6%    1.4%  LazyCompile: *_storeHeader node:_http_outgoing:379:22
+    153    0.6%    1.4%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/operators/matchEvent/matchEvent.operator.js:14:57
+    124    0.5%    1.1%  LazyCompile: *resOnFinish node:_http_server:796:21
+    108    0.4%    1.0%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:66:35
+    108    0.4%    1.0%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.helpers.js:25:49
+    103    0.4%    0.9%  LazyCompile: *_writeRaw node:_http_outgoing:349:19
+     97    0.4%    0.9%  LazyCompile: *end node:_http_outgoing:836:45
+     85    0.3%    0.8%  LazyCompile: *writeHead node:_http_server:277:19
+     85    0.3%    0.8%  LazyCompile: *Subscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:95:47
+     75    0.3%    0.7%  LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     70    0.3%    0.6%  LazyCompile: *setUnrefTimeout node:internal/timers:372:25
+     68    0.3%    0.6%  LazyCompile: *endReadable node:internal/streams/readable:1290:21
+     67    0.3%    0.6%  LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+     65    0.2%    0.6%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.helpers.js:12:49
+     64    0.2%    0.6%  LazyCompile: *Readable.read node:internal/streams/readable:394:35
+     63    0.2%    0.6%  LazyCompile: *OutgoingMessage node:_http_outgoing:103:25
+     62    0.2%    0.6%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/internal-dependencies/httpServerEventStream.reader.js:24:60
+     58    0.2%    0.5%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+     58    0.2%    0.5%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+middleware-body@3.4.9_34fe524a6776a2a96ffad4c0447e464c/node_modules/@marblejs/middleware-body/dist/body.middleware.js:11:126
+     55    0.2%    0.5%  LazyCompile: *setStreamTimeout node:internal/stream_base_commons:245:26
+     55    0.2%    0.5%  LazyCompile: *onwrite node:internal/streams/writable:431:17
+     54    0.2%    0.5%  LazyCompile: *MapToSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:37:48
+     53    0.2%    0.5%  LazyCompile: *MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+     52    0.2%    0.5%  LazyCompile: *readableAddChunk node:internal/streams/readable:235:26
+     49    0.2%    0.4%  LazyCompile: *nextTick node:internal/process/task_queues:102:18
+     47    0.2%    0.4%  LazyCompile: *exports.contentTypeFactory /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseContentType.factory.js:14:30
+     45    0.2%    0.4%  RegExp: [^\t\x20-\x7e\x80-\xff]
+     43    0.2%    0.4%  LazyCompile: *parse node:url:170:37
+     43    0.2%    0.4%  LazyCompile: *addListener node:events:459:58
+     43    0.2%    0.4%  LazyCompile: *Readable.resume node:internal/streams/readable:958:37
+     42    0.2%    0.4%  LazyCompile: *write_ node:_http_outgoing:733:16
+     41    0.2%    0.4%  LazyCompile: *get node:_http_incoming:111:16
+     41    0.2%    0.4%  LazyCompile: *MapToOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:25:45
+     41    0.2%    0.4%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:24:80
+     40    0.2%    0.4%  LazyCompile: *emit node:events:318:44
+     40    0.2%    0.4%  LazyCompile: *MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+     39    0.1%    0.4%  LazyCompile: *parserOnMessageComplete node:_http_common:148:33
+     39    0.1%    0.4%  LazyCompile: *Readable.on node:internal/streams/readable:871:33
+     38    0.1%    0.3%  LazyCompile: *ReadableState node:internal/streams/readable:77:23
+     37    0.1%    0.3%  LazyCompile: *afterWriteTick node:internal/streams/writable:488:24
+     35    0.1%    0.3%  LazyCompile: *endReadableNT node:internal/streams/readable:1300:23
+     34    0.1%    0.3%  LazyCompile: *socketListenerWrap node:_http_server:985:37
+     33    0.1%    0.3%  LazyCompile: *stream$.subscribe.type /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:55:62
+     33    0.1%    0.3%  LazyCompile: *_finish node:_http_server:209:52
+     33    0.1%    0.3%  LazyCompile: *MergeMapSubscriber.notifyComplete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:95:60
+     32    0.1%    0.3%  LazyCompile: *Subscriber.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:81:49
+     31    0.1%    0.3%  LazyCompile: *resume_ node:internal/streams/readable:979:17
+     30    0.1%    0.3%  LazyCompile: *setRequestTimeout node:_http_server:770:27
+     30    0.1%    0.3%  LazyCompile: *removeListener node:events:505:28
+     30    0.1%    0.3%  LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     29    0.1%    0.3%  LazyCompile: *onParserExecuteCommon node:_http_server:696:31
+     29    0.1%    0.3%  LazyCompile: *get useDeprecatedSynchronousErrorHandling /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/config.js:16:46
+     29    0.1%    0.3%  LazyCompile: *<anonymous> node:_http_outgoing:561:44
+     28    0.1%    0.3%  RegExp: ^(\/\/?(?!\/)[^?\s]*)(\?[^\s]*)?$
+     28    0.1%    0.3%  LazyCompile: *_flush node:_http_outgoing:936:51
+     27    0.1%    0.2%  LazyCompile: *pipe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/fp-ts@2.10.2/node_modules/fp-ts/lib/function.js:290:14
+     27    0.1%    0.2%  LazyCompile: *arrayClone node:events:656:20
+     26    0.1%    0.2%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/+internal/utils/http.util.js:7:39
+     25    0.1%    0.2%  RegExp: ^.*\.
+     24    0.1%    0.2%  LazyCompile: *removeAllListeners node:events:558:32
+     24    0.1%    0.2%  LazyCompile: *FilterSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/filter.js:42:49
+     24    0.1%    0.2%  LazyCompile: *<anonymous> node:_http_outgoing:567:45
+     23    0.1%    0.2%  LazyCompile: *Subscriber /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:24:24
+     21    0.1%    0.2%  RegExp: ^.*[/\\]
+     21    0.1%    0.2%  LazyCompile: *clearIncoming node:_http_server:752:23
+     21    0.1%    0.2%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:18:21
+     21    0.1%    0.2%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseBody.factory.js:8:34
+     20    0.1%    0.2%  LazyCompile: *emitReadable_ node:internal/streams/readable:570:23
+     19    0.1%    0.2%  LazyCompile: *onParserExecute node:_http_server:639:25
+     19    0.1%    0.2%  LazyCompile: *matchKnownFields node:_http_incoming:222:26
+     19    0.1%    0.2%  LazyCompile: *catchErrorOperatorFunction /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:18:47
+     19    0.1%    0.2%  LazyCompile: *Socket.resume node:net:609:35
+     18    0.1%    0.2%  LazyCompile: *slowCases node:internal/util:139:19
+     18    0.1%    0.2%  LazyCompile: *handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+     17    0.1%    0.2%  LazyCompile: *get node:internal/bootstrap/pre_execution:318:8
+     16    0.1%    0.1%  LazyCompile: *emitCloseNT node:_http_server:851:21
+     15    0.1%    0.1%  LazyCompile: *processPromiseRejections node:internal/process/promises:202:34
+     15    0.1%    0.1%  LazyCompile: *SimpleInnerSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:33:58
+     13    0.0%    0.1%  RegExp: ^\/json[\/#\?]?$
+     13    0.0%    0.1%  LazyCompile: *MergeMapSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:85:55
+     12    0.0%    0.1%  LazyCompile: *onFinish node:_http_outgoing:831:18
+     12    0.0%    0.1%  LazyCompile: *MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+     11    0.0%    0.1%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:27:21
+     10    0.0%    0.1%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.helpers.js:14:29
+      8    0.0%    0.1%  LazyCompile: *urlParse node:url:154:18
+      8    0.0%    0.1%  LazyCompile: *insertGuarded node:internal/timers:325:23
+      6    0.0%    0.1%  LazyCompile: *resolve node:path:1012:10
+      6    0.0%    0.1%  LazyCompile: *normalizeString node:path:61:25
+      4    0.0%    0.0%  LazyCompile: *remove node:internal/linkedlist:15:16
+      4    0.0%    0.0%  LazyCompile: *clearRequestTimeout node:_http_server:782:29
+      3    0.0%    0.0%  LazyCompile: *of /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/observable/of.js:6:12
+      3    0.0%    0.0%  LazyCompile: *hasHooks node:internal/async_hooks:437:18
+      3    0.0%    0.0%  LazyCompile: *get node:internal/bootstrap/pre_execution:306:8
+      3    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:620:37
+      3    0.0%    0.0%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:26:44
+      2    0.0%    0.0%  LazyCompile: *mapOperation /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:18:33
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/fp-ts@2.10.2/node_modules/fp-ts/lib/Option.js:451:42
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/fp-ts@2.10.2/node_modules/fp-ts/lib/Option.js:187:54
+      2    0.0%    0.0%  LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseHandler.js:15:53
+      1    0.0%    0.0%  LazyCompile: *realpathSync node:fs:1729:22
+      1    0.0%    0.0%  LazyCompile: *readStart node:_http_incoming:42:19
+      1    0.0%    0.0%  LazyCompile: *get node:internal/streams/writable:774:8
+      1    0.0%    0.0%  LazyCompile: *dirname node:path:1171:10
+      1    0.0%    0.0%  LazyCompile: *callback node:internal/streams/writable:555:44
+      1    0.0%    0.0%  LazyCompile: *_unrefTimer node:net:396:52
+      1    0.0%    0.0%  LazyCompile: *Writable.write node:internal/streams/writable:293:36
+      1    0.0%    0.0%  LazyCompile: *Subscription.add /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscription.js:71:43
+      1    0.0%    0.0%  LazyCompile: *Subject.next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subject.js:51:39
+      1    0.0%    0.0%  LazyCompile: *Observable.pipe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:84:42
+      1    0.0%    0.0%  LazyCompile: *Observable.lift /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:15:42
+      1    0.0%    0.0%  LazyCompile: *MergeMapSubscriber._innerSub /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:76:55
+
+ [C++]:
+   ticks  total  nonlib   name
+   3346   12.7%   30.6%  __GI___writev
+    883    3.3%    8.1%  __libc_read
+    179    0.7%    1.6%  __pthread_mutex_unlock_usercnt
+    167    0.6%    1.5%  epoll_ctl
+    133    0.5%    1.2%  __memcpy_avx_unaligned_erms
+    104    0.4%    1.0%  __GI___libc_malloc
+     88    0.3%    0.8%  cfree@GLIBC_2.2.5
+     77    0.3%    0.7%  __GI___pthread_getspecific
+     56    0.2%    0.5%  __memchr_avx2
+     53    0.2%    0.5%  epoll_pwait
+     47    0.2%    0.4%  __pthread_cond_signal
+     47    0.2%    0.4%  __clock_gettime
+     43    0.2%    0.4%  _int_free
+     39    0.1%    0.4%  __lll_lock_wait
+     34    0.1%    0.3%  operator delete(void*)
+     31    0.1%    0.3%  _int_malloc
+     27    0.1%    0.2%  operator new(unsigned long)
+     26    0.1%    0.2%  __GI___libc_write
+     23    0.1%    0.2%  __futex_abstimed_wait_common64
+     13    0.0%    0.1%  operator new[](unsigned long)
+     11    0.0%    0.1%  fwrite
+     11    0.0%    0.1%  __libc_enable_asynccancel
+      8    0.0%    0.1%  operator delete[](void*)
+      8    0.0%    0.1%  malloc_consolidate
+      8    0.0%    0.1%  __memcmp_avx2_movbe
+      5    0.0%    0.0%  __pthread_enable_asynccancel
+      4    0.0%    0.0%  unlink_chunk.constprop.0
+      4    0.0%    0.0%  __GI___pthread_mutex_lock
+      4    0.0%    0.0%  __GI___mprotect
+      3    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      3    0.0%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      3    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      3    0.0%    0.0%  __memset_avx2_unaligned_erms
+      3    0.0%    0.0%  __mempcpy_avx_unaligned_erms
+      3    0.0%    0.0%  __GI__IO_file_xsputn
+      2    0.0%    0.0%  syscall
+      2    0.0%    0.0%  std::ostream::sentry::~sentry()
+      2    0.0%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      2    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      2    0.0%    0.0%  __strlen_avx2
+      2    0.0%    0.0%  __pthread_cond_broadcast
+      2    0.0%    0.0%  __memset_avx2_erms
+      2    0.0%    0.0%  __GI__IO_default_xsputn
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      1    0.0%    0.0%  std::__use_cache<std::__numpunct_cache<char> >::operator()(std::locale const&) const
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.0%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+      1    0.0%    0.0%  new_do_write
+      1    0.0%    0.0%  _mid_memalign
+      1    0.0%    0.0%  _itoa_word
+      1    0.0%    0.0%  __strcmp_avx2
+      1    0.0%    0.0%  __pthread_disable_asynccancel
+      1    0.0%    0.0%  __mpn_mul_1
+      1    0.0%    0.0%  __libc_write
+      1    0.0%    0.0%  __libc_recvmsg
+      1    0.0%    0.0%  __getsockname
+      1    0.0%    0.0%  __getpid
+      1    0.0%    0.0%  __errno_location
+      1    0.0%    0.0%  __GI___printf_fp_l
+      1    0.0%    0.0%  __GI___mmap
+      1    0.0%    0.0%  __GI___madvise
+      1    0.0%    0.0%  __GI___libc_alloca_cutoff
+      1    0.0%    0.0%  __GI__IO_file_sync
+
+ [Summary]:
+   ticks  total  nonlib   name
+   5316   20.1%   48.6%  JavaScript
+   5533   20.9%   50.6%  C++
+    447    1.7%    4.1%  GC
+  15494   58.6%          Shared libraries
+     89    0.3%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   3346   84.9%   12.7%  __GI___writev
+    115    2.9%    0.4%  __memcpy_avx_unaligned_erms
+     79    2.0%    0.3%  __GI___libc_malloc
+     75    1.9%    0.3%  __pthread_mutex_unlock_usercnt
+     56    1.4%    0.2%  __memchr_avx2
+     41    1.0%    0.2%  cfree@GLIBC_2.2.5
+     34    0.9%    0.1%  __clock_gettime
+     25    0.6%    0.1%  operator delete(void*)
+     24    0.6%    0.1%  __GI___pthread_getspecific
+     20    0.5%    0.1%  operator new(unsigned long)
+     19    0.5%    0.1%  _int_malloc
+     19    0.5%    0.1%  _int_free
+     15    0.4%    0.1%  __GI___libc_write
+     11    0.3%    0.0%  __pthread_cond_signal
+     11    0.3%    0.0%  __libc_enable_asynccancel
+      8    0.2%    0.0%  __memcmp_avx2_movbe
+      7    0.2%    0.0%  fwrite
+      3    0.1%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      3    0.1%    0.0%  __memset_avx2_unaligned_erms
+      3    0.1%    0.0%  __mempcpy_avx_unaligned_erms
+      3    0.1%    0.0%  __lll_lock_wait
+      2    0.1%    0.0%  unlink_chunk.constprop.0
+      2    0.1%    0.0%  syscall
+      2    0.1%    0.0%  std::ostream::sentry::~sentry()
+      2    0.1%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      2    0.1%    0.0%  __GI___pthread_mutex_lock
+      1    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      1    0.0%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      1    0.0%    0.0%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      1    0.0%    0.0%  std::__use_cache<std::__numpunct_cache<char> >::operator()(std::locale const&) const
+      1    0.0%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+      1    0.0%    0.0%  operator new[](unsigned long)
+      1    0.0%    0.0%  operator delete[](void*)
+      1    0.0%    0.0%  new_do_write
+      1    0.0%    0.0%  _mid_memalign
+      1    0.0%    0.0%  __strlen_avx2
+      1    0.0%    0.0%  __strcmp_avx2
+      1    0.0%    0.0%  __memset_avx2_erms
+      1    0.0%    0.0%  __libc_write
+      1    0.0%    0.0%  __GI___madvise
+      1    0.0%    0.0%  __GI__IO_file_xsputn
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  15459   58.5%  /home/knrd/.nvm/versions/node/v15.14.0/bin/node
+   3718   24.1%    /home/knrd/.nvm/versions/node/v15.14.0/bin/node
+    725   19.5%      LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    725  100.0%        LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    725  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    723   99.7%            LazyCompile: *MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+    375   10.1%      LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseBody.factory.js:8:34
+    375  100.0%        LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    375  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    375  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    363    9.8%      /home/knrd/.nvm/versions/node/v15.14.0/bin/node
+    312   86.0%        LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+    311   99.7%          LazyCompile: *handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+    311  100.0%            LazyCompile: *parserOnIncoming node:_http_server:860:26
+      8    2.2%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:281:21
+      8  100.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:312:26
+      6   75.0%            LazyCompile: ~trySelf node:internal/modules/cjs/loader:432:17
+      2   25.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1101:37
+      7    1.9%        LazyCompile: *Subscription.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscription.js:17:51
+      6   85.7%          LazyCompile: *Subscriber.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:81:49
+      6  100.0%            LazyCompile: *Subscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:95:47
+      1   14.3%          LazyCompile: *SimpleInnerSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:33:58
+      1  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      6    1.7%        LazyCompile: ~stat node:internal/modules/cjs/loader:145:14
+      4   66.7%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:485:28
+      4  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:840:35
+      2   33.3%          LazyCompile: ~tryFile node:internal/modules/cjs/loader:375:17
+      2  100.0%            LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:391:23
+      4    1.1%        LazyCompile: ~resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+      4  100.0%          LazyCompile: ~handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+      3   75.0%            LazyCompile: *emit node:events:318:44
+      1   25.0%            LazyCompile: ~emit node:events:318:44
+      4    1.1%        LazyCompile: *clearBuffer node:internal/streams/writable:534:21
+      4  100.0%          LazyCompile: *end node:_http_outgoing:836:45
+      4  100.0%            LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    284    7.6%      LazyCompile: *writeHead node:_http_server:277:19
+    277   97.5%        LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    277  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    277  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+      4    1.4%        LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseHandler.js:15:53
+      4  100.0%          LazyCompile: ~<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+      4  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+      3    1.1%        LazyCompile: ~<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseHandler.js:15:53
+      3  100.0%          LazyCompile: ~<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+      3  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    258    6.9%      LazyCompile: *_storeHeader node:_http_outgoing:379:22
+    258  100.0%        LazyCompile: *writeHead node:_http_server:277:19
+    249   96.5%          LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    249  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+      7    2.7%          LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseHandler.js:15:53
+      7  100.0%            LazyCompile: ~<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    212    5.7%      LazyCompile: *clearBuffer node:internal/streams/writable:534:21
+    204   96.2%        LazyCompile: *end node:_http_outgoing:836:45
+    204  100.0%          LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    204  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+      7    3.3%        LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseHandler.js:15:53
+      7  100.0%          LazyCompile: ~<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+      7  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    167    4.5%      LazyCompile: ~compileFunction node:vm:311:25
+    167  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1008:18
+    167  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1046:37
+    167  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1101:37
+    141    3.8%      LazyCompile: *resOnFinish node:_http_server:796:21
+    136   96.5%        LazyCompile: *onFinish node:_http_outgoing:831:18
+    136  100.0%          LazyCompile: *afterWriteTick node:internal/streams/writable:488:24
+    136  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:66:35
+      5    3.5%        LazyCompile: *emit node:events:318:44
+      5  100.0%          LazyCompile: ~onFinish node:_http_outgoing:831:18
+      3   60.0%            LazyCompile: *callback node:internal/streams/writable:555:44
+      2   40.0%            LazyCompile: *afterWriteTick node:internal/streams/writable:488:24
+    115    3.1%      LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.helpers.js:14:29
+    114   99.1%        LazyCompile: *MapToSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:37:48
+    114  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    114  100.0%            LazyCompile: *MapToOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:25:45
+     98    2.6%      LazyCompile: *exports.contentTypeFactory /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseContentType.factory.js:14:30
+     98  100.0%        LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+     98  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     98  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     92    2.5%      LazyCompile: ~writevGeneric node:internal/stream_base_commons:122:23
+     92  100.0%        LazyCompile: ~Socket._writeGeneric node:net:748:42
+     92  100.0%          LazyCompile: ~Socket._writev node:net:780:36
+     92  100.0%            LazyCompile: ~doWrite node:internal/streams/writable:404:17
+     66    1.8%      LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+     66  100.0%        LazyCompile: *handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+     66  100.0%          LazyCompile: *parserOnIncoming node:_http_server:860:26
+     66  100.0%            LazyCompile: *parserOnHeadersComplete node:_http_common:78:33
+     56    1.5%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+     53   94.6%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:306:29
+      6   11.3%          Eval: ~<anonymous> node:crypto:1:1
+      6  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      5    9.4%          Eval: ~<anonymous> node:internal/child_process:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      4    7.5%          Eval: ~<anonymous> node:child_process:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      3    5.7%          Eval: ~<anonymous> node:tls:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      3    5.7%          Eval: ~<anonymous> node:internal/modules/esm/loader:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      3    5.7%          Eval: ~<anonymous> node:http:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      3    5.7%          Eval: ~<anonymous> node:_http_client:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      2    3.8%          LazyCompile: ~setupChildProcessIpcChannel node:internal/bootstrap/pre_execution:329:37
+      2  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:21:36
+      2    3.8%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:413:29
+      2  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:21:36
+      2    3.8%          Eval: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      2    3.8%          Eval: ~<anonymous> node:internal/modules/package_json_reader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      2    3.8%          Eval: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      2    3.8%          Eval: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      2    3.8%          Eval: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.9%          LazyCompile: ~setupInspectorHooks node:internal/bootstrap/pre_execution:224:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:21:36
+      1    1.9%          LazyCompile: ~lookupAndListen node:net:1490:25
+      1  100.0%            LazyCompile: ~Server.listen node:net:1391:35
+      1    1.9%          Eval: ~<anonymous> node:tty:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:net:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:internal/crypto/random:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:internal/cluster/child:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:internal/bootstrap/pre_execution:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:cluster:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      1    1.9%          Eval: ~<anonymous> node:_http_common:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:273:27
+      3    5.4%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:220:25
+      3  100.0%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:35:26
+      3  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:748:24
+     43    1.2%      LazyCompile: *Subscription.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscription.js:17:51
+     36   83.7%        LazyCompile: *Subscriber.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:81:49
+     26   72.2%          LazyCompile: *Subscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:95:47
+     15   57.7%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     11   42.3%            LazyCompile: *MergeMapSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:85:55
+     10   27.8%          LazyCompile: ~SimpleInnerSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:33:58
+      6   60.0%            LazyCompile: *Subscriber.complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:75:46
+      4   40.0%            LazyCompile: ~Subscriber.complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:75:46
+      5   11.6%        LazyCompile: *SimpleInnerSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:33:58
+      5  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      5  100.0%            LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+      1    2.3%        LazyCompile: ~Subscriber.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:81:49
+      1  100.0%          LazyCompile: ~SimpleInnerSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:33:58
+      1  100.0%            LazyCompile: ~Subscriber.complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:75:46
+      1    2.3%        LazyCompile: *Subscription.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscription.js:17:51
+      1  100.0%          LazyCompile: *Subscriber.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:81:49
+      1  100.0%            LazyCompile: *Subscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:95:47
+   1323    8.6%    LazyCompile: *clearBuffer node:internal/streams/writable:534:21
+   1302   98.4%      LazyCompile: *end node:_http_outgoing:836:45
+   1302  100.0%        LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+   1302  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+   1302  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     17    1.3%      LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseHandler.js:15:53
+     17  100.0%        LazyCompile: ~<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+     17  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     17  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    428    2.8%    LazyCompile: *Subscription.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscription.js:17:51
+    334   78.0%      LazyCompile: *Subscriber.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:81:49
+    326   97.6%        LazyCompile: *Subscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:95:47
+    266   81.6%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    170   63.9%            LazyCompile: *MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+     93   35.0%            LazyCompile: *MapToOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:25:45
+     60   18.4%          LazyCompile: *MergeMapSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:85:55
+     60  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      8    2.4%        LazyCompile: ~SimpleInnerSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:33:58
+      4   50.0%          LazyCompile: ~Subscriber.complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:75:46
+      4  100.0%            LazyCompile: ~Subscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:95:47
+      4   50.0%          LazyCompile: *Subscriber.complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:75:46
+      4  100.0%            LazyCompile: ~Subscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:95:47
+     65   15.2%      LazyCompile: *Subscription.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscription.js:17:51
+     65  100.0%        LazyCompile: *Subscriber.unsubscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:81:49
+     64   98.5%          LazyCompile: *Subscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:95:47
+     51   79.7%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     13   20.3%            LazyCompile: *MergeMapSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:85:55
+      1    1.5%          LazyCompile: ~SimpleInnerSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:33:58
+      1  100.0%            LazyCompile: ~Subscriber.complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:75:46
+     28    6.5%      LazyCompile: *SimpleInnerSubscriber._complete /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:33:58
+     28  100.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     28  100.0%          LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+     28  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    404    2.6%    LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    404  100.0%      LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    404  100.0%        LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    404  100.0%          LazyCompile: *MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+    404  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    397    2.6%    LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    105   26.4%      LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+     45   42.9%        LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+     45  100.0%          LazyCompile: *handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+     45  100.0%            LazyCompile: *parserOnIncoming node:_http_server:860:26
+     21   20.0%        LazyCompile: *stream$.subscribe.type /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:55:62
+     21  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     21  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     20   19.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     18   90.0%          LazyCompile: *MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+     18  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      2   10.0%          LazyCompile: ~MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+      2  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     17   16.2%        LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     17  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     17  100.0%            LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+      2    1.9%        LazyCompile: *Subject.next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subject.js:51:39
+      2  100.0%          LazyCompile: ~stream$.subscribe.type /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:55:62
+      2  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    101   25.4%      LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+    101  100.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    101  100.0%          LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+     57   56.4%            LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+     44   43.6%            LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     87   21.9%      LazyCompile: *MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+     87  100.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     65   74.7%          LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+     65  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     22   25.3%          LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+     18   81.8%            LazyCompile: *stream$.subscribe.type /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:55:62
+      4   18.2%            LazyCompile: *Subject.next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subject.js:51:39
+     74   18.6%      LazyCompile: *MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+     74  100.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     74  100.0%          LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+     74  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     24    6.0%      LazyCompile: *MapToOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:25:45
+     24  100.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     24  100.0%          LazyCompile: *MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+     24  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    356    2.3%    LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+    130   36.5%      LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+    128   98.5%        LazyCompile: *handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+    128  100.0%          LazyCompile: *parserOnIncoming node:_http_server:860:26
+    128  100.0%            LazyCompile: *parserOnHeadersComplete node:_http_common:78:33
+      2    1.5%        LazyCompile: ~handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+      2  100.0%          LazyCompile: *parserOnIncoming node:_http_server:860:26
+      2  100.0%            LazyCompile: *parserOnHeadersComplete node:_http_common:78:33
+     81   22.8%      LazyCompile: *stream$.subscribe.type /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:55:62
+     81  100.0%        LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     81  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     81  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     72   20.2%      LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     68   94.4%        LazyCompile: *MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+     68  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     68  100.0%            LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+      4    5.6%        LazyCompile: ~MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+      4  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      2   50.0%            LazyCompile: ~CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+      2   50.0%            LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+     69   19.4%      LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     69  100.0%        LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     69  100.0%          LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     69  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    313    2.0%    LazyCompile: *writeHead node:_http_server:277:19
+    300   95.8%      LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    300  100.0%        LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    300  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    300  100.0%            LazyCompile: *MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+     10    3.2%      LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseHandler.js:15:53
+     10  100.0%        LazyCompile: ~<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+     10  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     10  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    310    2.0%    LazyCompile: *parserOnHeadersComplete node:_http_common:78:33
+    292    1.9%    LazyCompile: *Subscriber /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:24:24
+    276   94.5%      LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+    137   49.6%        LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+    136   99.3%          LazyCompile: *handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+    136  100.0%            LazyCompile: *parserOnIncoming node:_http_server:860:26
+     49   17.8%        LazyCompile: *stream$.subscribe.type /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:55:62
+     49  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     49  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     47   17.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     44   93.6%          LazyCompile: *MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+     44  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      3    6.4%          LazyCompile: ~MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+      3  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     40   14.5%        LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     40  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     40  100.0%            LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+      6    2.1%      LazyCompile: ~SimpleOuterSubscriber /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:65:35
+      3   50.0%        LazyCompile: ~MergeMapSubscriber /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:44:32
+      3  100.0%          LazyCompile: ~MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+      3  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      3   50.0%        LazyCompile: ~CatchSubscriber /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:36:29
+      3  100.0%          LazyCompile: ~CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+      3  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      5    1.7%      LazyCompile: ~MapToSubscriber /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:32:29
+      5  100.0%        LazyCompile: ~MapToOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:25:45
+      5  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      4   80.0%            LazyCompile: *MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+      1   20.0%            LazyCompile: ~MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+      3    1.0%      LazyCompile: ~MapSubscriber /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:39:27
+      3  100.0%        LazyCompile: ~MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+      3  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      1   33.3%            LazyCompile: ~CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+      1   33.3%            LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+      1   33.3%            LazyCompile: *MergeMapSubscriber._innerSub /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:76:55
+    262    1.7%    LazyCompile: *parserOnIncoming node:_http_server:860:26
+    262  100.0%      LazyCompile: *parserOnHeadersComplete node:_http_common:78:33
+    252    1.6%    LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    226   89.7%      LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    163   72.1%        LazyCompile: *MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+    163  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    163  100.0%            LazyCompile: *MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+     47   20.8%        LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     44   93.6%          LazyCompile: *MapToSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:37:48
+     44  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      2    4.3%          LazyCompile: *MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+      2  100.0%            LazyCompile: *Subscriber.next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:64:42
+      1    2.1%          LazyCompile: *Subscriber.next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:64:42
+      1  100.0%            LazyCompile: ~MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+     11    4.9%        LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     11  100.0%          LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     11  100.0%            LazyCompile: *MapToSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:37:48
+      5    2.2%        LazyCompile: *Subscriber.next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:64:42
+      5  100.0%          LazyCompile: ~MergeMapSubscriber.notifyNext /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:92:56
+      5  100.0%            LazyCompile: ~SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     20    7.9%      LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     11   55.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+     11  100.0%          LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+     11  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      8   40.0%        LazyCompile: *MapToSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:37:48
+      8  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      8  100.0%            LazyCompile: *MapToOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mapTo.js:25:45
+      1    5.0%        LazyCompile: *Subscriber.next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:64:42
+      1  100.0%          LazyCompile: ~MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+      1  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      6    2.4%      LazyCompile: *MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+      6  100.0%        LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+      6  100.0%          LazyCompile: *MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+      6  100.0%            LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    215    1.4%    LazyCompile: *MapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:31:43
+    215  100.0%      LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    128   59.5%        LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+    128  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    128  100.0%            LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+     87   40.5%        LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+     87  100.0%          LazyCompile: *stream$.subscribe.type /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:55:62
+     87  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    168    1.1%    LazyCompile: *processTicksAndRejections node:internal/process/task_queues:66:35
+    167    1.1%    LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+    167  100.0%      LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    167  100.0%        LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+    108   64.7%          LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+    108  100.0%            LazyCompile: *handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+     59   35.3%          LazyCompile: *SimpleInnerSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/innerSubscribe.js:26:54
+     59  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    166    1.1%    LazyCompile: *resolve /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:72:21
+    166  100.0%      LazyCompile: *handle /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/server/http.server.listener.js:17:20
+    166  100.0%        LazyCompile: *parserOnIncoming node:_http_server:860:26
+    166  100.0%          LazyCompile: *parserOnHeadersComplete node:_http_common:78:33
+    160    1.0%    LazyCompile: *MergeMapOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:36:48
+    160  100.0%      LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    160  100.0%        LazyCompile: *CatchOperator.call /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/catchError.js:29:45
+    160  100.0%          LazyCompile: *Observable.subscribe /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Observable.js:21:47
+    160  100.0%            LazyCompile: *MergeMapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/mergeMap.js:55:51
+    157    1.0%    LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseBody.factory.js:8:34
+    157  100.0%      LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+    157  100.0%        LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    157  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+    157  100.0%            LazyCompile: *MapSubscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/operators/map.js:46:46
+
+   3346   12.7%  __GI___writev
+   3346  100.0%    LazyCompile: *clearBuffer node:internal/streams/writable:534:21
+   3297   98.5%      LazyCompile: *end node:_http_outgoing:836:45
+   3297  100.0%        LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+   3297  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+   3297  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     42    1.3%      LazyCompile: *<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/response/http.responseHandler.js:15:53
+     42  100.0%        LazyCompile: ~<anonymous> /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/@marblejs+core@3.4.9_fp-ts@2.10.2+rxjs@6.6.7/node_modules/@marblejs/core/dist/http/router/http.router.resolver.v2.js:32:60
+     42  100.0%          LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+     42  100.0%            LazyCompile: *Subscriber._next /home/knrd/projects/tfb/frameworks/TypeScript/marble/node_modules/.pnpm/rxjs@6.6.7/node_modules/rxjs/internal/Subscriber.js:88:43
+
+    883    3.3%  __libc_read
+
